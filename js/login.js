@@ -27,7 +27,7 @@ loginForm.addEventListener('submit', (event) => {
       localStorage.setItem('currentUser', JSON.stringify(user)) 
 
      
-      window.location.href = '../main.html';
+      window.location.href = 'main.html';
     } else {
       alert('Incorrect password. Please try again.');
     }
