@@ -1,0 +1,30 @@
+.notification {
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: none;
+}
+
+.notification-bar {
+    position: fixed;
+    height: 50px;
+    width: 400px;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    z-index: 1000;
+}
+
+.show {
+    display: flex;
+}
+
+.notification-content {
+    text-align: center;
+    padding-top: 10px;
+    z-index: 1000;
+}

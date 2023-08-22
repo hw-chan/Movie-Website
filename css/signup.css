@@ -1,0 +1,130 @@
+html{
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image:url('https://img1.hotstarext.com/image/upload/f_auto,q_90,w_2048/feature/onboarding/31-07-2023-my-background-desktop.jpg');
+  max-width: 480px; 
+  height: 100%;
+}
+
+header {
+  color: white;
+  padding: 50px 50px;
+  text-align: center;
+}
+
+
+.form_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  
+  margin-top: 200px;
+  margin-bottom: 120px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 45px;
+  
+  max-width: 290px;
+}
+
+
+.heading {
+  font-size: 2.5em;
+  color: #f8f9fa;
+  font-weight: 700;
+  margin: 15px 0 30px 0;
+}
+
+.inputContainer {
+  width: 80%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 20px;
+  fill: #090979;
+}
+
+.inputField {
+  width: 950%;
+  height: 40px;
+  background-color: #f8f9fa;
+  border: none;
+  border-bottom: 2px solid rgb(173, 173, 173);
+  border-radius: 30px;
+  margin: 10px 0;
+  color: black;
+  font-size: .8em;
+  font-weight: 500;
+  box-sizing: border-box;
+  padding-left: 40px;
+}
+
+.inputField:focus {
+  outline: none;
+  border-bottom: 2px solid rgba(9,9,121,1);
+}
+
+.inputField::placeholder {
+  padding-left: 10px;
+  color: rgb(80, 80, 80);
+  font-size: 1em;
+  font-weight: 500;
+}
+
+#button {
+  position: relative;
+  width: 80%;
+  border: 2px solid #00d4ff;
+  background-color: #090979;
+  height: 40px;
+  color: white;
+  font-size: .8em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  margin: 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+
+.signupContainer {
+  margin: 0;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.signupContainer p {
+  font-size: .9em;
+  font-weight: 500;
+  color: #f8f9fa;
+}
+
+.signupContainer a {
+  font-size: 0.8em;
+  font-weight: 700;
+  background-color: #f8f9fa;
+  color: #090979;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+

@@ -1,0 +1,290 @@
+.topnav {
+  width: 100%;
+  z-index: 1;
+  left: 0;
+}
+
+.navb {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.431);
+  min-height: 70px;
+  display: flex;
+  border-radius: 5px;
+}
+
+.navb>i {
+  display: none;
+}
+
+.navb ul {
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+
+.navb ul li {
+  margin-right: 35px;
+  font-weight: 700;
+  list-style: none;
+  background: none;
+  font-family: sans-serif;
+  font-size: 13px;
+  letter-spacing: 1.1px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.navb ul li:hover {
+  color: aqua;
+  transform: scale(1.1);
+}
+
+.logo {
+  color: white;
+  font-size: 25px;
+  margin-top: 30px;
+  margin-left: 50px;
+  cursor: pointer;
+  letter-spacing: 3px;
+}
+
+.logo span {
+  color: aqua;
+}
+
+.navb a {
+  font-size: 13px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+*/ .navb ul li a:hover {
+  color: aqua;
+}
+
+span {
+  color: aqua;
+  font-weight: 700;
+}
+
+.btn {
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  backdrop-filter: blur(30px);
+  letter-spacing: 2px;
+  background: rgba(129, 129, 129, 0.233);
+  margin: 30px 15px 15px 30px;
+  padding: 12px 35px;
+  border: 2px solid rgb(32, 244, 255);
+  border-radius: 50px;
+  transition: 0.15 ease;
+}
+
+.btn-primary:hover {
+  background: rgb(32, 244, 255);
+  color: black;
+}
+
+.btn1 {
+  justify-content: center;
+  display: flex;
+}
+
+#lan {
+  background: none;
+  color: white;
+  border: none;
+  margin-left: 5px;
+}
+
+.line {
+  border: 0.3px solid rgba(255, 255, 255, 0.45);
+  margin: 10px;
+  width: 0px;
+}
+
+#slidy-container {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  padding-left: 20px;
+}
+
+.position {
+  position: relative;
+  z-index: 4;
+  top: 65%;
+  margin-left: 40px;
+}
+
+.carousel {
+  display: flex;
+  width: 92%;
+  height: 100%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.slider {
+  flex: 0 0 auto;
+  margin-right: 30px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  transition: 1s;
+  overflow: hidden;
+}
+
+.slider img {
+  width: 70%;
+  min-height: 100%;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+}
+
+.slide-content {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(to right, #030b17 80%, #0c111b00);
+  color: #fff;
+  padding-left: 20px;
+}
+
+.banner-title {
+  padding-left: 5px;
+  text-transform: capitalize;
+  margin-top: 180px;
+  color: aqua;
+}
+
+.movie-des {
+  width: 70%;
+  line-height: 30px;
+  padding-left: 5px;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+/* mobile deivce */
+@media (max-width: 480px) {
+  .navb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    position: relative;
+  }
+
+  .logo {
+    justify-self: center;
+  }
+
+  .navb>ul,
+  .right {
+    display: none;
+  }
+
+  .navb>i {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+  }
+
+  .movie-des {
+    display: none;
+  }
+
+  .position {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-left: 0;
+  }
+
+  .position>button {
+    width: 200px;
+  }
+}
+
+/* tablet device */
+@media (min-width: 481px) and (max-width: 768px) {
+  .navb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    position: relative;
+  }
+
+  .navb>ul,
+  .right {
+    display: none;
+  }
+
+  .navb>i {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+  }
+
+  .position {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: 180px;
+  }
+
+  .position>button {
+    width: 200px;
+  }
+}
+
+/* small screen: laptop */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    position: relative;
+  }
+
+  .navb>i {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+  }
+
+  .navb>ul,
+  .right {
+    display: none;
+  }
+}
+
+/* large screen: desktop, etc */
+@media (min-width: 1025px) {
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
